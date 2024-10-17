@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,   // This is needed for NestJS decorators
+    "experimentalDecorators": true,  // This is needed for decorators in general
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2021",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,            // Skips type-checking of declaration files (.d.ts)
+    "strict": true,                  // Enforces strict type checks (optional but recommended)
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,         // Ensures compatibility with ES modules
+    "strictPropertyInitialization": false,
+    "noImplicitReturns": true,
+    "noImplicitAny": false,
+    "strictBindCallApply": true
+  },
+  "include": ["src/**/*.ts"],        // Ensures TypeScript includes all your source files
+  "exclude": ["node_modules"]
+}
